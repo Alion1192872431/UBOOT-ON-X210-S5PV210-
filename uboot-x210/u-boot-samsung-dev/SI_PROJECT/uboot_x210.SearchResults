@@ -1,0 +1,860 @@
+---- CONFIG_SMDKC110 Matches (1 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_SMDKC110		1
+---- CONFIG_S5PC110 Matches (5 in 3 files) ----
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):		 defined(CONFIG_S5PC110)|| \
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):		 defined(CONFIG_S5PC110)|| \
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):		 defined(CONFIG_S5PC110)|| \
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define CONFIG_S5PC110			1
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_S5PC110		1		/* in a SAMSUNG S3C6410 SoC */
+---- CONFIG_MCP_SINGLE Matches (1 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_MCP_SINGLE	1
+---- CONFIG_CHECK_MPLL_LOCK Matches (1 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_CHECK_MPLL_LOCK	1		/* Check MPLL is locked */
+---- SMDKV210 Matches (2 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CFG_PROMPT              "SMDKV210 # "   /* Monitor Command Prompt       */
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_IDENT_STRING	" for SMDKV210"
+---- SMDKV210 Matches (2 in 2 files) ----
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	printf("\nBoard:   SMDKV210\n");
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CFG_PROMPT              "SMDKV210 # "   /* Monitor Command Prompt       */
+---- DRAM Matches (6 in 5 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	puts("DRAM:    ");
+Cmd_bdinfo.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		print_num("DRAM bank",	i);
+Demo.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):				printf("  type DRAM\n");
+Denali_ecc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\post\cpu\ppc4xx):		debug("DRAM initialization complete\n");
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):.ifdef SYNC_16BURST_50M				@; DRAM clock is 100MHz
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):.else	@; SYNC_16BURST_83M or ASYNC_READ	@; DRAM clock is 165MHz
+---- Flash: Matches (2 in 2 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	puts ("Flash:  ");
+Jedec_flash.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):	debug("Found JEDEC Flash: %s\n", jedec_entry->name);
+---- unrecognised EXT_CSD structure version 7 Matches (0 in 0 files) ----
+---- unrecognised EXT_CSD structure version Matches (0 in 0 files) ----
+---- unrecognised EXT_CSD structure Matches (1 in 1 files) ----
+Mmc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mmc):		printf("unrecognised EXT_CSD structure "
+---- The input address don't need a virtual-to-physi... Matches (0 in 0 files) ----
+---- The input address don't need a virtual-to-physi... Matches (0 in 0 files) ----
+---- The input address don't need Matches (2 in 1 files) ----
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):		printf("The input address don't need "\
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):		printf("The input address don't need "\
+---- ERROR: resetting DM9000 -> not responding Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("ERROR: resetting DM9000 -> not responding\n");
+---- start_armboot Matches (2 in 2 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):void start_armboot (void)
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):	.word start_armboot
+---- dm9000 Matches (0 in 0 files) ----
+---- DM9000 Matches (9 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("resetting DM9000\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 1st reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 2nd reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("ERROR: resetting DM9000 -> not responding\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 16 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 32 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 8 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: Undefined IO-mode:0x%x\n", io_mode);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):			printf("DM9000 error: status check fail: 0x%x\n",
+---- DM9000 Matches (9 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("resetting DM9000\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 1st reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 2nd reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("ERROR: resetting DM9000 -> not responding\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 16 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 32 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 8 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: Undefined IO-mode:0x%x\n", io_mode);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):			printf("DM9000 error: status check fail: 0x%x\n",
+---- DM9000 Matches (0 in 0 files) ----
+---- START_ARMBOOT Matches (0 in 0 files) ----
+---- start_armboot Matches (2 in 2 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):void start_armboot (void)
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):	.word start_armboot
+---- dm9000 not found at Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("dm9000 not found at 0x%08x id: 0x%08x\n",
+---- DM9000_DATA Matches (18 in 2 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_outb((((u8 *) data_ptr)[i] & 0xff), DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_outw(((u16 *) data_ptr)[i], DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_outl(((u32 *) data_ptr)[i], DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		((u8 *) data_ptr)[i] = DM9000_inb(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		((u16 *) data_ptr)[i] = DM9000_inw(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		((u32 *) data_ptr)[i] = DM9000_inl(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	tmpdata = DM9000_inl(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	*RxStatus = DM9000_inw(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	*RxLen = DM9000_inw(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	*RxStatus = DM9000_inb(DM9000_DATA) + (DM9000_inb(DM9000_DATA) << 8);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	*RxLen = DM9000_inb(DM9000_DATA) + (DM9000_inb(DM9000_DATA) << 8);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		rxbyte = DM9000_inb(DM9000_DATA) & 0x03;
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	return DM9000_inb(DM9000_DATA);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_outb(value, DM9000_DATA);
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define DM9000_DATA			(CONFIG_DM9000_BASE+2)
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define DM9000_DATA			(CONFIG_DM9000_BASE+1)
+---- DM9000 Matches (9 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("resetting DM9000\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 1st reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		DM9000_DBG("resetting the DM9000, 2nd reset\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("ERROR: resetting DM9000 -> not responding\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 16 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 32 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: running in 8 bit mode\n");
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("DM9000: Undefined IO-mode:0x%x\n", io_mode);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):			printf("DM9000 error: status check fail: 0x%x\n",
+---- dm9000 not found at 0xa8000000 id: 0x2b2a2928 Matches (0 in 0 files) ----
+---- dm9000 not found at 0xa8000000 id: Matches (0 in 0 files) ----
+---- dm9000 not found at Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("dm9000 not found at 0x%08x id: 0x%08x\n",
+---- MACHID Matches (0 in 0 files) ----
+---- start_armboot Matches (2 in 2 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):void start_armboot (void)
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):	.word start_armboot
+---- linuxkernel Matches (0 in 0 files) ----
+---- kernel Matches (181 in 20 files) ----
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):			setenv("bootcmd", "movi read kernel c0008000;movi read rootfs c0800000;bootm c0008000");
+Board.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):		setenv("bootcmd", "movi read kernel c0008000;movi read rootfs c0800000;bootm c0008000");
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):		puts ("Could not find kernel entry point!\n");
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	printf ("\nStarting kernel ...\n\n");
+Cmd_android.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	printf("Start kernel image installation. \n");
+Cmd_android.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	printf("Completed kernel image (%x byte) installation. \n", nOtg.dn_filesize);
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: default image load address = 0x%08lx\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: cmdline image address = 0x%08lx\n", img_addr);
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		puts ("ERROR: can't get kernel image!\n");
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	debug ("   kernel loaded at 0x%08lx, end = 0x%08lx\n", load_start, load_end);
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		puts ("Not a kernel image\n");
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: default image load address = 0x%08lx\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: config '%s' from image at 0x%08lx\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: subimage '%s' from image at 0x%08lx\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		debug ("*  kernel: cmdline image address = 0x%08lx\n", img_addr);
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		printf ("## Booting kernel from Legacy Image at %08lx ...\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		printf ("## Booting kernel from FIT Image at %08lx ...\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):			puts ("Bad FIT kernel image format!\n");
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		printf ("   Trying '%s' kernel subimage\n", fit_uname_kernel);
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):			puts ("Could not find kernel subimage data!\n");
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	debug ("   kernel data at 0x%08lx, len = 0x%08lx (%ld)\n",
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"\tpassing arguments 'arg ...'; when booting a Linux kernel,\n"
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"\tWhen booting a Linux kernel which requires a flat device-tree\n"
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"\tdevice-tree blob. To boot that kernel without an initrd image,\n"
+Cmd_fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					printf ("Booting kernel..\n");
+Cmd_fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				ptn = fastboot_flash_find_ptn("kernel");
+Cmd_fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					printf("flashing '%s' failed\n", "kernel+ramdisk");
+Cmd_fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					printf("partition '%s' flashed\n", "kernel+ramdisk");
+Cmd_fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	strcpy(ptable[pcount].name, "kernel");
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"'mtdids' - linux kernel mtd device id <-> u-boot device id mapping\n\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<ro-flag>  := when set to 'ro' makes partition read-only (not used, passed to kernel)\n"
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				} else if (strcmp(argv[2], "kernel") == 0) {
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					printf("Reading kernel from sector %d (%d sectors).. ", ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					movi_read((uint) addr, ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				} else if (strcmp(argv[2], "kernel") == 0) {
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					printf("Writing kernel to sector %d (%d sectors).. ", ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					movi_write((uint) addr, ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				} else if (strcmp(argv[2], "kernel") == 0) {
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						printf("eMMC Reading kernel from sector %d (%d sectors).. ", ofsinfo.kernel, EMMC_KERNEL_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						emmc_read((uint) addr, ofsinfo.kernel, EMMC_KERNEL_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						printf("Reading kernel from sector %d (%d sectors).. ", ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						movi_read((uint) addr, ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				} else if (strcmp(argv[2], "kernel") == 0) {
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						printf("eMMC Writing kernel to sector %d (%d sectors).. ", ofsinfo.kernel, EMMC_KERNEL_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						emmc_write((uint) addr, ofsinfo.kernel, EMMC_KERNEL_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						printf("Writing kernel to sector %d (%d sectors).. ", ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):						movi_write((uint) addr, ofsinfo.kernel, MOVI_ZIMAGE_BLKCNT);
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"movi read  {u-boot | kernel} {addr} - Read data from moviNAND\n"
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"movi write {u-boot | kernel} {addr} - Write data to moviNAND\n"
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		strcpy(image[4].description, "kernel");
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		printf("%s kernel.. %ld, %ld ", rw ? "writing" : "reading",
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"movi read  {u-boot | kernel} {addr} - Read data from sd/mmc\n"
+Cmd_movi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"movi write {fwbl1 | u-boot | kernel} {addr} - Write data to sd/mmc\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"'mtdids' - linux kernel mtd device id <-> u-boot device id mapping\n\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<ro-flag>  := when set to 'ro' makes partition read-only (not used, passed to kernel)"
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Linux kernel. The purpose of the following list is to document a complete list
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Note: U-Boot supports two methods of booting a PowerPC Linux kernel: old way,
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):kernel is passed a pointer to the FDT. The boot method is indicated for each
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 2. Boot kernel image located at <addr1>.
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):kernel and a ramdisk, respectively. The kernel is booted with initrd loaded
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):		    |	   (kernel, initrd) | (kernel, initrd, fdt) |
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 4. Similar to case 3, but the kernel is booted without initrd.  Second
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 5. Boot kernel image located at <addr1> with initrd loaded with ramdisk
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 6. <addr1> is the address of a kernel image, <addr2> is the address of a
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 7. <addr1> is the address of a kernel image and <addr3> is the address of
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 9. Similar to case 2: boot kernel stored in <subimg1> from the image at
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 11. Equivalent to case 5: boot kernel stored in <subimg1> from the image
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 12. Equivalent to case 6: boot kernel stored in <subimg1> from the image
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):of FDT binary blob that is to be passed to the kernel.
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Ad. 14. Equivalent to case 7: boot kernel stored in <subimg1> from the image
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):of the FDT binary blob that is to be passed to the kernel.
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):- boot kernel "kernel@1" stored in a new uImage located at 200000:
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):- boot "kernel@1" from a new uImage at 200000 with initrd "ramdisk@2" found in
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@1 800000:ramdisk@2
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):- boot "kernel@2" from a new uImage at 200000, with initrd "ramdisk@1" and FDT
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@1 800000:ramdisk@1 800000:fdt@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):- boot kernel "kernel@2" with initrd "ramdisk@2", both stored in a new uImage
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@2 200000:ramdisk@2 600000
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):- boot kernel "kernel@2" from new uImage at 200000 with FDT "fdt@1" from the
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@2 - 200000:fdt@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):tftp 200000 /tftpboot/kernel
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm :kernel@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 400000:kernel@1 :ramdisk@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 400000:kernel@1 400000:ramdisk@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm :kernel@1 400000:ramdisk@1 :fdt@1
+Command_syntax_extensions.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):bootm 200000:kernel@1 400000:ramdisk@1 400000:fdt@1
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/kernel.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/kernel.h>
+Fastboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):		.name     = "kernel",
+Gdbsend.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\gdb):	Perror("can't open kernel image file '%s'", ifn);
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):types (kernel, ramdisk, etc.), it also enhances integrity protection of images
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):uImage (kernel, ramdisk, etc.) is specified in the image source file in the
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):contains all the referenced data (kernel, ramdisk, etc.) and other information
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Example 1 -- old-style (non-FDT) kernel booting
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Consider a simple scenario, where a PPC Linux kernel built from sources on the
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):contains a gzip-compressed PPC Linux kernel (the only data file in this case).
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):doc/uImage.FIT/kernel.its (note that kernel.its assumes that vmlinux.bin.gz is
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):specified in the kernel.its file). Here's how to create the image and inspect
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):$ mkimage -f kernel.its kernel.itb
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):DTC: dts->dtb  on file "kernel.its"
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):$ mkimage -l kernel.itb
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):FIT description: Simple image with single Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit): Image 0 (kernel@1)
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Description:	Vanilla Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Description:	Boot Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Kernel:	kernel@1
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):The resulting image file kernel.itb can be now transferred to the target,
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):=> tftp 900000 /path/to/tftp/location/kernel.itb
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Filename '/path/to/tftp/location/kernel.itb'.
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):   FIT description: Simple image with single Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    Image 0 (kernel@1)
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Vanilla Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Boot Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Kernel:	   kernel@1
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):## Booting kernel from FIT Image at 00900000 ...
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):   Trying 'kernel@1' kernel subimage
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Vanilla Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Example 2 -- new-style (FDT) kernel booting
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Consider another simple scenario, where a PPC Linux kernel is to be booted
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):files: vmlinux.bin.gz (Linux kernel) and target.dtb (FDT blob). The uImage can
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):FIT description: Simple image with single Linux kernel and FDT blob
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit): Image 0 (kernel@1)
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Description:	Vanilla Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Description:	Boot Linux kernel with FDT blob
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  Kernel:	kernel@1
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):   FIT description: Simple image with single Linux kernel and FDT blob
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    Image 0 (kernel@1)
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Vanilla Linux kernel
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Boot Linux kernel with FDT blob
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Kernel:	   kernel@1
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):## Booting kernel from FIT Image at 00900000 ...
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):   Trying 'kernel@1' kernel subimage
+Howto.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):     Description:  Vanilla Linux kernel
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	{	IH_TYPE_KERNEL,	    "kernel",	  "Kernel Image",	},
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	debug ("## kernel board info at 0x%08lx\n", (ulong)*kbd);
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):	{	IH_TYPE_KERNEL,	    "kernel",	  "Kernel Image",	},
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):	debug ("## kernel board info at 0x%08lx\n", (ulong)*kbd);
+Image.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define FIT_KERNEL_PROP		"kernel"
+Movi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):	uint	kernel;
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Evolution of the 2.6 Linux kernel for embedded PowerPC systems introduced new
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):kernel in the form of Flattened Device Tree.
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):To avoid confusion with the kernel FDT the following naming convention is
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    single component sub-image (like kernel, ramdisk, etc.). At least one
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    "standalone", "kernel", "ramdisk", "firmware", "script", "filesystem",
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  - os : OS name, mandatory for type="kernel", valid OS names are: "openbsd",
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  - arch : Architecture name, mandatory for types: "standalone", "kernel",
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    "standalone" and "kernel".
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    property of the root node. Mandatory for types: "standalone" and "kernel".
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):convenient, labeled boot configurations, which combine together kernel images
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  |- kernel = "kernel sub-node unit name"
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):  - kernel : Unit name of the corresponding kernel image (image sub-node of a
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    "kernel" type).
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):The FDT blob is required to properly boot FDT based kernel, so the minimal
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):configuration for 2.6 FDT kernel is (kernel, fdt) pair.
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):Older, 2.4 kernel and 2.6 non-FDT kernel do not use FDT blob, in such cases
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CONFIG_BOOTCOMMAND	"movi read kernel C0008000; movi read rootfs 30A00000 180000; bootm C0008000 30A00000"
+---- linux Matches (301 in 151 files) ----
+Ahci.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\block):#include <linux/ctype.h>
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):#include <linux/types.h>
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):#include <linux/types.h>
+Api_platform-arm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):#include <linux/types.h>
+Api_platform-ppc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):#include <linux/types.h>
+Atomic.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm):#include <linux/config.h>
+Bedbug.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Big_endian.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\byteorder):#include <linux/byteorder/swab.h>
+Big_endian.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\byteorder):#include <linux/byteorder/generic.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/module.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/moduleparam.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/stringify.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/stat.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/miscdevice.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/log2.h>
+Build.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/kthread.h>
+Byteorder.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm):#include <linux/byteorder/big_endian.h>
+Byteorder.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm):#include <linux/byteorder/little_endian.h>
+Card.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mmc):#include <linux/mmc/mmc.h>
+Cfb_console.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\video):#include <linux/types.h>
+Cmd_bedbug.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_doc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/nftl.h>
+Cmd_doc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/doc2000.h>
+Cmd_elf.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_ext2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_fdt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_fdt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/types.h>
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/list.h>
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/nand_legacy.h>
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/nand.h>
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"'mtdids' - linux kernel mtd device id <-> u-boot device id mapping\n\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n"
+Cmd_jffs2.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<size>     := standard linux memsize OR '-' to denote all remaining space\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/list.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/err.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/mtd.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/nand.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/onenand.h>
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"'mtdids' - linux kernel mtd device id <-> u-boot device id mapping\n\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)\n"
+Cmd_mtdparts.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	"<size>     := standard linux memsize OR '-' to denote all remaining space\n"
+Cmd_nand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/nand_legacy.h>
+Cmd_nvedit.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Cmd_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/compat.h>
+Cmd_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/mtd.h>
+Cmd_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/onenand.h>
+Cmd_reiser.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Cmd_ubi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/mtd.h>
+Cmd_ubi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/partitions.h>
+Common.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/bitops.h>
+Common.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Common.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/string.h>
+Commproc.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/config.h>
+Compr_lzari.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/stddef.h>
+Compr_lzo.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/stddef.h>
+Cramfs.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\cramfs):#include <linux/stat.h>
+Crc.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/kernel.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/module.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/compiler.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/types.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/slab.h>
+Crc32.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/init.h>
+Crc32.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/types.h>
+Ctype.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/ctype.h>
+Ctype.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\updater):#include <linux/ctype.h>
+Debug.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/random.h>
+Demo.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):#include <linux/types.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/kernel.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/init.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/sched.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/delay.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/rslib.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/moduleparam.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/mtd.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/nand.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/doc2000.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/compatmac.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/partitions.h>
+Diskonchip.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/inftl.h>
+Display_options.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/ctype.h>
+Div64.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/types.h>
+Div64.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Doc2000.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd.h>
+Doc2000.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mutex.h>
+Docecc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/doc2000.h>
+Eba.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/slab.h>
+Eba.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Eba.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Environment.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):# include <linux/types.h>
+Env_auto.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_common.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_dataflash.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_eeprom.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_flash.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_nand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_nowhere.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_nvram.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/stddef.h>
+Env_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/compat.h>
+Env_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/mtd.h>
+Env_onenand.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/mtd/onenand.h>
+Err.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/mtd/compat.h>
+Fdt_ro.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\libfdt):	php = fdt_getprop(fdt, nodeoffset, "linux,phandle", &len);
+Fdt_ro.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\libfdt):	return fdt_node_offset_by_prop_value(fdt, -1, "linux,phandle",
+Fdt_ro.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):	php = fdt_getprop(fdt, nodeoffset, "linux,phandle", &len);
+Fdt_ro.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):	return fdt_node_offset_by_prop_value(fdt, -1, "linux,phandle",
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/types.h>
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					"linux,stdout-path", p, len);
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		printf("WARNING: could not set linux,stdout-path %s.\n",
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):		path = fdt_getprop(fdt, nodeoffset, "linux,initrd-start", NULL);
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				"linux,initrd-start", &tmp, sizeof(tmp));
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):					"could not set linux,initrd-start %s.\n",
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				"linux,initrd-end", &tmp, sizeof(tmp));
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):				printf("WARNING: could not set linux,initrd-end %s.\n",
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	path = fdt_getprop(fdt, nodeoffset, "linux,stdout-path", NULL);
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	path = fdt_getprop(fdt, nodeoffset, "linux,stdout-path", NULL);
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):			"linux,stdout-path", OF_STDOUT_PATH, strlen(OF_STDOUT_PATH)+1);
+Fdt_support.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):			printf("WARNING: could not set linux,stdout-path %s.\n",
+File.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\fat):#include <linux/stat.h>
+File.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\fat):#include <linux/time.h>
+Fpga.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>	       /* for ulong typedef */
+Fsl_upm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/mtd.h>
+Fsl_upm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/fsl_upm.h>
+Fsl_upm.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/nand.h>
+Fw_env.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\env):# include <linux/mtd/mtd.h>
+Glue.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):#include <linux/types.h>
+Host.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mmc):#include <linux/mmc/mmc.h>
+Hush.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>    /* isalpha, isdigit */
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	{	IH_OS_LINUX,	"linux",	"Linux",		},
+Image.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):	{	IH_OS_LINUX,	"linux",	"Linux",		},
+Image.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/string.h>
+Io.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Io.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Io.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm):#include <linux/types.h>
+Isp116x-hcd.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\usb):#include <linux/list.h>
+Jffs2_1pass.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/stat.h>
+Jffs2_1pass.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/time.h>
+Jffs2_1pass.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/mtd/nand_legacy.h>
+Jffs2_nand_1pass.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/stat.h>
+Jffs2_nand_1pass.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\jffs2):#include <linux/time.h>
+Kapi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/module.h>
+Kapi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Lcd.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/types.h>
+Libfdt_env.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/string.h>
+Libfdt_env.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Libgenwrap.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):#include <linux/types.h>
+Little_endian.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\byteorder):#include <linux/byteorder/swab.h>
+Little_endian.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\byteorder):#include <linux/byteorder/generic.h>
+Load_kernel.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\jffs2):#include <linux/list.h>
+Macb.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#include <linux/mii.h>
+Main.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):#include <linux/mtd/onenand_regs.h>
+Malloc.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/stddef.h>	/* for size_t */
+Mc146818rtc.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/rtc.h>          /* get the user-level API */
+Md5.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+Md5.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/types.h>
+Md5.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):#include <linux/string.h>
+Md5.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):#include <linux/types.h>
+Md5.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\u-boot):#include <linux/types.h>
+Memory.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm\arch-s5pc11x):#include <linux/config.h>
+Miiphyutil.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/list.h>
+Mmc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mmc):#include <linux/list.h>
+Mmc.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/list.h>
+Mode_string.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\reiserfs):#include <linux/stat.h>
+Mtd-abi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/compat.h>
+Mtd.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/types.h>
+Mtd.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd-abi.h>
+Mtdconcat.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/mtd.h>
+Mtdconcat.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/compat.h>
+Mtdconcat.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/concat.h>
+Mtdcore.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/mtd.h>
+Mtdcore.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/compat.h>
+Mtdpart.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/types.h>
+Mtdpart.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/list.h>
+Mtdpart.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/mtd.h>
+Mtdpart.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/partitions.h>
+Mtdpart.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd):#include <linux/mtd/compat.h>
+Mxc_spi.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\spi):"See linux mxc_spi driver from Freescale for details."
+Nand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/compat.h>
+Nand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/mtd.h>
+Nand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/nand.h>
+Nand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/compat.h>
+Nand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd.h>
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/compat.h>
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/mtd.h>
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/nand.h>
+Nand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/nand_ecc.h>
+Nand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/compat.h>
+Nand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/mtd.h>
+Nand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/nand.h>
+Nand_cp.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):#include <linux/mtd/nand.h>
+Nand_ecc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include<linux/mtd/mtd.h>
+Nand_ids.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand):#include <linux/mtd/nand.h>
+Nand_legacy.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand_legacy):#include <linux/mtd/nand_legacy.h>
+Nand_legacy.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\nand_legacy):#include <linux/mtd/nand_ids.h>
+Ncb.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):#include <linux/in.h>
+Nftl.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd.h>
+Nftl.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/blktrans.h>
+Onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd.h>
+Onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/onenand_regs.h>
+Onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/bbm.h>
+Onenand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/compat.h>
+Onenand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/mtd.h>
+Onenand_base.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/onenand.h>
+Onenand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/compat.h>
+Onenand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/mtd.h>
+Onenand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/onenand.h>
+Onenand_bbt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/bbm.h>
+Onenand_cp.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):#include <linux/mtd/onenand_regs.h>
+Onenand_ipl.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_ipl):#include <linux/mtd/onenand_regs.h>
+Onenand_uboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/compat.h>
+Onenand_uboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/mtd.h>
+Onenand_uboot.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\onenand):#include <linux/mtd/onenand.h>
+Onenand_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Partitions.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/types.h>
+Posix_types.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/stddef.h>
+Ptrace.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm\proc-armv):#include <linux/config.h>
+Rbtree.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):#include <linux/rbtree.h>
+Rbtree.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/stddef.h>
+Reiserfs.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\reiserfs):#include <linux/ctype.h>
+Reiserfs.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\reiserfs):#include <linux/time.h>
+S3c_onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/compat.h>
+S3c_onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/mtd.h>
+S3c_onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/s3c_onenand.h>
+S3c_onenand.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/mtd/mtd.h>
+Scan.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Scan.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Sha1.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+Sha1.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools):#include <linux/string.h>
+Sha256.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+Skdrv1st.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net\sk98lin\h):#include <linux/types.h>
+Skdrv1st.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net\sk98lin\h):#include <linux/string.h>
+Skproc.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net\sk98lin):#include <linux/proc_fs.h>
+Source_file_format.txt (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\doc\uimage.fit):    "netbsd", "freebsd", "4_4bsd", "linux", "svr4", "esix", "solaris", "irix",
+Stat.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/types.h>
+Stddef.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/types.h>
+String.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/types.h>
+String.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+String.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/ctype.h>
+String.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\updater):#include <linux/types.h>
+String.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\updater):#include <linux/string.h>
+String.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/types.h>	/* for size_t */
+String.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/stddef.h>	/* for NULL */
+System.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\asm-arm\proc-armv):#include <linux/config.h>
+Tigon3.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#include <linux/byteorder/big_endian.h>
+Time.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/types.h>
+Types.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/config.h>
+Types.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux):#include <linux/posix_types.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/init.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/types.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/list.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/rbtree.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/sched.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/wait.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/mutex.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/rwsem.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/spinlock.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/fs.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/cdev.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/device.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/string.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/vmalloc.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/mtd/mtd.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/mtd/ubi.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/types.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/list.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/rbtree.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/string.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/mtd/mtd.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/mtd/ubi.h>
+Ubi.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\linux\mtd):#include <linux/types.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/crc32.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/types.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/list.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/rbtree.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/string.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/mtd.h>
+Ubi_uboot.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#include <linux/mtd/ubi.h>
+Upd.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Usb.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):#include <linux/ctype.h>
+Utils.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\tools\updater):#include <linux/ctype.h>
+Vfat.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\fs\fdos):#include <linux/ctype.h>
+Vmt.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Vsprintf.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/types.h>
+Vsprintf.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+Vsprintf.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/ctype.h>
+Vtbl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Vtbl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/err.h>
+Wl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/slab.h>
+Wl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/crc32.h>
+Wl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/freezer.h>
+Wl.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\mtd\ubi):#include <linux/kthread.h>
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):#include <linux/mtd/nand.h>
+Zlib.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_generic):#include <linux/string.h>
+---- do_bootm_linux Matches (3 in 2 files) ----
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):void do_bootm_linux (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[],
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):extern boot_os_fn do_bootm_linux;
+Cmd_bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\common):	    do_bootm_linux (cmdtp, flag, argc, argv, &images);
+---- machid Matches (6 in 1 files) ----
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	int	machid = bd->bi_arch_number;
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	s = getenv ("machid");
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):		machid = simple_strtoul (s, NULL, 16);
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):		printf ("Using machid 0x%x from environment\n", machid);
+Bootm.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\lib_arm):	theKernel (0, machid, bd->bi_boot_params);
+---- operating at 100M full duplex mode Matches (0 in 0 files) ----
+---- operating at Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	printf("operating at ");
+---- eth_init Matches (37 in 23 files) ----
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	if (eth_init(gd->bd) < 0)
+Bcm570x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+Bcm570x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		    ("eth_init: FAILURE: no BCM570x Ethernet devices found.\n");
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_init cs8900_eth_init
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * bd);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):eth_init(bd_t * bd)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("eth_init()\n");
+Enc28j60.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+Eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):int eth_init(bd_t *bis)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	debug ("%s(%d): eth_init()\n", __FILE__, __LINE__);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init (bd_t * bd);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd) {
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	PRINTK("### eth_init\n");
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	if (eth_init(bd) < 0) {
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	eth_init (gd->bd);
+Net.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):extern int eth_init(bd_t *bis);			/* Initialize the device	*/
+Netarm_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init (bd_t * bd)
+Netconsole.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		if (eth_init (gd->bd) < 0)
+Ns7520_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * pbis)
+Ns9750_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * pbis)
+Rtl8019.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+S3c4510b_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bis)
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("eth_init: malloc failed\n");
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	printf("eth_init: Failed\n");
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd) {
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_init smc_eth_init
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Xilinx_emac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * bis)
+Xilinx_emaclite.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+---- dev_open_net Matches (3 in 3 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):		err = dev_open_net(di->cookie);
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):int dev_open_net(void *cookie)
+Api_private.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):int	dev_open_net(void *);
+---- API_dev_open Matches (2 in 1 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):static int API_dev_open(va_list ap)
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_OPEN] = &API_dev_open;
+---- api_init Matches (3 in 3 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):void api_init(void)
+Api_private.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):void	api_init(void);
+Common.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):void	api_init (void);
+---- SMDKV210 Matches (1 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CFG_PROMPT              "SMDKV210 # "   /* Monitor Command Prompt       */
+---- rx fifo error Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):				printf("rx fifo error\n");
+---- DM9000 error: status check fail: Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):			printf("DM9000 error: status check fail: 0x%x\n",
+---- dm9000_phy_write(0, 0x8000); Matches (0 in 0 files) ----
+---- DM9000_IMR Matches (3 in 2 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_iow(DM9000_IMR, IMR_PAR);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_iow(DM9000_IMR, 0x80);	/* Disable all interrupt */
+Dm9000x.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define DM9000_IMR             0xFF
+---- dm9000_halt Matches (0 in 0 files) ----
+---- eth_halt Matches (44 in 24 files) ----
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern void eth_halt(void);
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt() {
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	eth_halt();
+Bcm570x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+Bfin_mac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		eth_halt();
+Bfin_mac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):			eth_halt();
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_halt cs8900_eth_halt
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):eth_halt(void)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("eth_halt\n");
+Enc28j60.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+Eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):void eth_halt(void)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	debug ("%s(%d): eth_halt()\n", __FILE__, __LINE__);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern void eth_halt (void);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt ()
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt() {
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	PRINTK("### eth_halt\n");
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	eth_halt();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):		eth_halt();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):		eth_halt();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):			eth_halt();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):			eth_halt();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):		eth_halt ();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	eth_halt ();
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	eth_halt();
+Net.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):extern void eth_halt(void);			/* stop SCC			*/
+Netarm_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern void eth_halt (void)
+Netconsole.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		eth_halt ();
+Ns7520_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Ns9750_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+Rtl8019.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+S3c4510b_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern void eth_halt(void);
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern void eth_halt(void);
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt() {
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_halt smc_eth_halt
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Xilinx_emac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt(void)
+Xilinx_emac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	debug ("eth_halt\n");
+Xilinx_emaclite.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):void eth_halt (void)
+Xilinx_emaclite.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	debug ("eth_halt\n");
+---- operating at Matches (1 in 1 files) ----
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	printf("operating at ");
+---- eth_init Matches (37 in 23 files) ----
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+3c589.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	if (eth_init(gd->bd) < 0)
+Bcm570x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+Bcm570x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		    ("eth_init: FAILURE: no BCM570x Ethernet devices found.\n");
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_init cs8900_eth_init
+Cs8900.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * bd);
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):eth_init(bd_t * bd)
+Dm9000x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	DM9000_DBG("eth_init()\n");
+Enc28j60.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+Eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):int eth_init(bd_t *bis)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Ks8695eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	debug ("%s(%d): eth_init()\n", __FILE__, __LINE__);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init (bd_t * bd);
+Lan91c96.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd) {
+Ne2000.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	PRINTK("### eth_init\n");
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	if (eth_init(bd) < 0) {
+Net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\net):	eth_init (gd->bd);
+Net.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):extern int eth_init(bd_t *bis);			/* Initialize the device	*/
+Netarm_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init (bd_t * bd)
+Netconsole.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		if (eth_init (gd->bd) < 0)
+Ns7520_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * pbis)
+Ns9750_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * pbis)
+Rtl8019.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bd)
+S3c4510b_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bis)
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):		printf("eth_init: malloc failed\n");
+Sh_eth.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):	printf("eth_init: Failed\n");
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):extern int eth_init(bd_t *bd);
+Smc91111.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd) {
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):#define eth_init smc_eth_init
+Smc911x.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t *bd)
+Xilinx_emac.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init(bd_t * bis)
+Xilinx_emaclite.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\drivers\net):int eth_init (bd_t * bis)
+---- dev_open_net Matches (3 in 3 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):		err = dev_open_net(di->cookie);
+Api_net.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):int dev_open_net(void *cookie)
+Api_private.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):int	dev_open_net(void *);
+---- API_dev_open Matches (2 in 1 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):static int API_dev_open(va_list ap)
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_OPEN] = &API_dev_open;
+---- api_init Matches (3 in 3 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):void api_init(void)
+Api_private.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):void	api_init(void);
+Common.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):void	api_init (void);
+---- calls_table Matches (20 in 1 files) ----
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):static cfp_t calls_table[API_MAXCALL] = { NULL, };
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	if (calls_table[call] == NULL) {
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	rv = calls_table[call](ap);
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_RSVD] = NULL;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_GETC] = &API_getc;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_PUTC] = &API_putc;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_TSTC] = &API_tstc;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_PUTS] = &API_puts;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_RESET] = &API_reset;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_GET_SYS_INFO] = &API_get_sys_info;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_UDELAY] = &API_udelay;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_GET_TIMER] = &API_get_timer;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_ENUM] = &API_dev_enum;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_OPEN] = &API_dev_open;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_CLOSE] = &API_dev_close;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_READ] = &API_dev_read;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_DEV_WRITE] = &API_dev_write;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_ENV_GET] = &API_env_get;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_ENV_SET] = &API_env_set;
+Api.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api):	calls_table[API_ENV_ENUM] = &API_env_enum;
+---- dm9000_pre_init Matches (2 in 1 files) ----
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):static void dm9000_pre_init(void)
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	dm9000_pre_init();
+---- SROM_BW_REG Matches (14 in 11 files) ----
+S3c2416.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG	__REG(0x40C20000)
+S3c2450.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG	__REG(0x40C20000)
+S3c24a0.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(0x40c20000)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+SROM_BW_OFFSET)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+0x0)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+0x0)
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	SROM_BW_REG &= ~(0xf << 20);
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	SROM_BW_REG |= (0<<23) | (0<<22) | (0<<21) | (1<<20);
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	SROM_BW_REG &= ~(0xf << 20);
+X210.c (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	SROM_BW_REG |= (0<<19) | (0<<18) | (0<<16);
+---- ELFIN_SROM_BASE Matches (62 in 13 files) ----
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):	ldr	r0, =ELFIN_SROM_BASE	/* 0xE8000000 */
+lowlevel_init.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	ldr	r0, =ELFIN_SROM_BASE	/* 0xE8000000 */
+S3c2416.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE	0x40c20000
+S3c2450.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE	0x40c20000
+S3c24a0.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE		0x40c20000
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE		0x70000000
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG		__REG(ELFIN_SROM_BASE+0x4)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG		__REG(ELFIN_SROM_BASE+0x8)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG		__REG(ELFIN_SROM_BASE+0xC)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG		__REG(ELFIN_SROM_BASE+0x10)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG		__REG(ELFIN_SROM_BASE+0x14)
+S3c6400.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG		__REG(ELFIN_SROM_BASE+0x18)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE		0x70000000
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG		__REG(ELFIN_SROM_BASE+0x4)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG		__REG(ELFIN_SROM_BASE+0x8)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG		__REG(ELFIN_SROM_BASE+0xC)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG		__REG(ELFIN_SROM_BASE+0x10)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG		__REG(ELFIN_SROM_BASE+0x14)
+S3c6410.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG		__REG(ELFIN_SROM_BASE+0x18)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE		0x70000000
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG		__REG(ELFIN_SROM_BASE+0x4)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG		__REG(ELFIN_SROM_BASE+0x8)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG		__REG(ELFIN_SROM_BASE+0xC)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG		__REG(ELFIN_SROM_BASE+0x10)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG		__REG(ELFIN_SROM_BASE+0x14)
+S3c6430.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG		__REG(ELFIN_SROM_BASE+0x18)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE		0xE7000000
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG		__REG(ELFIN_SROM_BASE+0x0)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG		__REG(ELFIN_SROM_BASE+0x4)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG		__REG(ELFIN_SROM_BASE+0x8)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG		__REG(ELFIN_SROM_BASE+0xC)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG		__REG(ELFIN_SROM_BASE+0x10)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG		__REG(ELFIN_SROM_BASE+0x14)
+S5p6440.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG		__REG(ELFIN_SROM_BASE+0x18)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE			0xE7000000
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+SROM_BW_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG			__REG(ELFIN_SROM_BASE+SROM_BC0_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG			__REG(ELFIN_SROM_BASE+SROM_BC1_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG			__REG(ELFIN_SROM_BASE+SROM_BC2_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG			__REG(ELFIN_SROM_BASE+SROM_BC3_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG			__REG(ELFIN_SROM_BASE+SROM_BC4_OFFSET)
+S5p6442.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG			__REG(ELFIN_SROM_BASE+SROM_BC5_OFFSET)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE			0xE7000000
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+0x0)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG			__REG(ELFIN_SROM_BASE+0x4)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG			__REG(ELFIN_SROM_BASE+0x8)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG			__REG(ELFIN_SROM_BASE+0xC)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG			__REG(ELFIN_SROM_BASE+0x10)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG			__REG(ELFIN_SROM_BASE+0x14)
+S5pc100.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG			__REG(ELFIN_SROM_BASE+0x18)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define ELFIN_SROM_BASE			0xE8000000
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BW_REG			__REG(ELFIN_SROM_BASE+0x0)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC0_REG			__REG(ELFIN_SROM_BASE+0x4)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC1_REG			__REG(ELFIN_SROM_BASE+0x8)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC2_REG			__REG(ELFIN_SROM_BASE+0xC)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC3_REG			__REG(ELFIN_SROM_BASE+0x10)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC4_REG			__REG(ELFIN_SROM_BASE+0x14)
+S5pc110.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include):#define SROM_BC5_REG			__REG(ELFIN_SROM_BASE+0x18)
+S5pc110_reg.inc (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):.equ ELFIN_SROM_BASE,		0xE8000000
+---- SMDKV210 Matches (1 in 1 files) ----
+X210.h (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\include\configs):#define CFG_PROMPT              "SMDKV210 # "   /* Monitor Command Prompt       */
+---- _start Matches (7 in 3 files) ----
+crt0.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):	.globl _start
+crt0.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\api_examples):_start:
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):.globl _start
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):_start:
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):.globl _start
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):_start: b	reset
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):	.word _start
+---- lowlevel_init Matches (6 in 4 files) ----
+Init.s (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_bl1\smdkc110):lowlevel_init:
+lowlevel_init.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):	.globl lowlevel_init
+lowlevel_init.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\board\samsung\x210):lowlevel_init:
+low_levelinit.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_ipl\board\apollon):.globl lowlevel_init
+low_levelinit.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\onenand_ipl\board\apollon):lowlevel_init:
+start.S (d:\vmshare\android_uboot_smdkv210\u-boot-samsung-dev\cpu\s5pc11x):	bl	lowlevel_init	/* go setup pll,mux,memory */
